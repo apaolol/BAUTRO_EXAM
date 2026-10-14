@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BautroBook Sign In</title>
+
+    <!-- Loads the shared website styles -->
+    <link rel="stylesheet" href="../src/css/universalStyles.css">
+
+    <!-- Loads the styles for the login box and input fields -->
+    <link rel="stylesheet" href="../src/css/signup.css">
+</head>
+
+<body>
+
+    <!-- Contains the login fields and login button -->
+    <div id="box1">
+
+        <!-- Input field for the username -->
+        Username
+        <input id="user" type="text">
+
+        <!-- Input field for the password -->
+        Password
+        <input id="pass" type="password">
+
+        <!-- Calls the login function using the entered username and password -->
+        <button type="button" onclick="clickButton(document.getElementById('user').value, document.getElementById('pass').value)">
+            Click Me!
+        </button>
+
+        <p>
+            Forgot your password? Impossible. It's <strong>1234</strong>.
+            The username is <strong>qwer</strong>. You're welcome.
+        </p>
+        
+        <!-- Loads the JavaScript responsible for checking login credentials -->
+        <script src="../src/js/login.js"></script>
+
+    </div>
+
+    <!-- Our default footer -->
+    <footer class="footer">
+
+        <!-- Clicking the logo returns us to home page -->
+        <a href="../index.html" class="footer-logo">
+            <img src="../assets/logo.jpg" alt="BautroBook Logo">
+        </a>
+    
+        <p>&copy; 2026 BautroBook</p>
+    </footer>
+
+</body>
+</html>

@@ -8,10 +8,22 @@
     align-items: center;
     gap: 12px;
     margin: auto;
+
+
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
 }
 
 #box1 input {
     padding: 8px;
-    max-width: 100%;
     box-sizing: border-box;
+
+
+    width: 100%;
+}
+
+#box1 p {
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
