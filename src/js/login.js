@@ -6,7 +6,7 @@ const pass = '1234';
 const clickButton = (a, b) => {
     if (a == user && b == pass) {
         alert('Login Success!');
-        document.location.href = 'profile.html';
+        document.location.href = 'feed.html';
     } else {
         alert('Wrong username or password!');
     }
