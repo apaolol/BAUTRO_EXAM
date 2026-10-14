@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BautroBook</title>
+    <link rel="stylesheet" href="../src/css/universalStyles.css">
+    <link rel="stylesheet" href="../src/css/contact.css">
+</head>
+<body>
+    <header class="header">
+    <div class="header-right">
+        <a href="../index.html">
+            <img src="../assets/logo.jpg" alt="BautroBook" class="header-logo">
+        </a>
+
+        <div class="profile-menu">
+            <a href="profile.html">
+                <img src="../assets/profile.jpg" alt="My Profile" class="header-pfp">
+            </a>
+
+            <button class="profile-button" onclick="toggleProfileMenu(event)">▼</button>
+
+            <div class="dropdown" id="profileDropdown">
+                <a href="profile.html">My Profile</a>
+                <a href="../index.html">Log Out</a>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- Main container separating the support information from the payment QR code. -->
+    <div id="contactBox">
+
+        <div id="contactText">
+            <h1>Contact BautroBook Support</h1>
+
+            <p>Having problems with your account? Want to report a bug?
+            Need someone to talk to?</p>
+
+            <p><b>Unfortunately, customer support is a premium feature.</b></p>
+
+            <hr>
+
+            <h2>How to Contact Us</h2>
+
+            <p>To contact the BautroBook administration, please send
+            a small, completely necessary, and definitely
+            non-refundable support fee of:</p>
+
+            <!-- Highlights the required support fee. -->
+            <h1 id="price">₱100.00</h1>
+
+            <p><b>Payment first. Emotional support later.</b></p>
+
+            <hr>
+
+            <!-- FAQ section presenting common questions and humorous answers. -->
+            <h2>Frequently Asked Questions</h2>
+
+            <p><b>Q: Why do I have to pay ₱100?</b><br>
+            A: Because our customer support team has bills to pay.</p>
+
+            <p><b>Q: What if I cannot afford ₱100?</b><br>
+            A: We encourage you to reconsider your financial priorities.</p>
+
+            <p><b>Q: What happens after I pay?</b><br>
+            A: Your message will be received with the urgency of a
+            government office lunch break.</p>
+
+            <p><b>Q: Can I get a refund?</b><br>
+            A: Refund requests require a separate ₱100 support ticket.</p>
+
+            <hr>
+
+            <p><b>Thank you for your generosity.</b></p>
+            <p>Connecting people, one questionable financial decision
+            at a time.</p>
+        </div>
+
+        <!-- Displays the GCash QR code and payment instructions. -->
+        <div id="qrBox">
+            <img src="../assets/gcash.jpg" alt="BautroBook GCash QR Code">
+
+            <h2>Scan to Pay ₱100</h2>
+            <p>Unlock the privilege of contacting our administration.</p>
+            <p><i>Payment first. Problems later.</i></p>
+        </div>
+
+    </div>
+
+    <script src="../src/js/profileDropdown.js"></script>
+
+    <footer class="footer">
+        <a href="aboutUs.html" class="footer-logo">
+            <img src="../assets/logo.jpg" alt="BautroBook Logo">
+        </a>
+
+        <div class="footer-links">
+            <a href="aboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="feed.html">Home</a>
+        </div>
+
+        <p>&copy; 2026 BautroBook</p>
+    </footer>
+
+</body>
+</html>

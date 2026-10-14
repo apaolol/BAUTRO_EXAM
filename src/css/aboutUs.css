@@ -1,0 +1,74 @@
+/* Styles for the About Us page */
+#aboutLayout {
+    display: flex;
+    align-items: stretch;
+    gap: 25px;
+    width: 1500px;
+    max-width: 96%;
+    margin: 30px auto;
+}
+
+#aboutBox {
+    display: flex;
+    flex: 2;
+    align-items: flex-start;
+    gap: 35px;
+    background-color: #e6d5b9;
+    color: #202020;
+    padding: 35px;
+    margin: 0;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+#aboutText { flex: 1.2; min-width: 0; }
+
+#aboutFeatures {
+    flex: 0.8;
+    min-width: 0;
+    border-left: 1px solid #b8a78c;
+    padding-left: 30px;
+}
+
+#aboutRight {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#aboutRight > img {
+    width: 130px;
+    height: auto;
+}
+
+#aboutPrinciples {
+    width: 100%;
+    background-color: #e6d5b9;
+    color: #202020;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+#aboutLayout h1, #aboutLayout h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+#aboutLayout h2 { margin-top: 22px; }
+#aboutLayout p { text-align: left; line-height: 1.6; }
+
+@media (max-width: 1000px) {
+    #aboutLayout { flex-direction: column; }
+    #aboutBox { flex-direction: column; }
+
+    #aboutFeatures {
+        border-left: none;
+        border-top: 1px solid #b8a78c;
+        padding-left: 0;
+        padding-top: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BautroBook Profile</title>
+
+    <!-- Loads the shared website styles -->
+    <link rel="stylesheet" href="../src/css/universalStyles.css">
+
+    <!-- Loads the styles specific to the profile page -->
+    <link rel="stylesheet" href="../src/css/profile.css">
+</head>
+
+<body>
+
+    <!-- Main container displaying the user's profile information -->
+    <div id="box2">
+
+        <!-- Displays the user's profile picture -->
+        <img src="../assets/profile.jpg"
+            alt="Profile Picture"
+            width="280"
+            height="320"
+            style="object-fit: cover;">
+
+        <div>
+
+            <!-- Displays the user's name and username -->
+            <h1 id="name">Lhino Bhutay</h1>
+            <p id="username">@dongkoy123</p>
+
+            <hr>
+
+            <!-- Displays the user's short biography -->
+            <h2>Bio</h2>
+            <p id="bio">I love music and java rice.</p>
+
+            <hr>
+
+            <!-- Displays additional information about the user -->
+            <h2>About Me</h2>
+            <p id="about">Write more about yourself here.</p>
+
+            <hr>
+
+            <!-- Lists the user's interests -->
+            <h2>Interests</h2>
+            <p id="interests">Music, gaming, photography.</p>
+
+            <!-- Provides buttons for editing and saving profile information -->
+            <div id="profileActions">
+                <button onclick="editProfile()">Edit Profile</button>
+                <button onclick="saveChanges()">Save Changes</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Loads the JavaScript functions for editing and saving profile information -->
+    <script src="../src/js/editProfile.js"></script>
+
+    <!-- Footer containing the logo, navigation links, and copyright notice -->
+    <footer class="footer">
+
+    
+        <a href="aboutUs.html" class="footer-logo">
+            <img src="../assets/logo.jpg" alt="BautroBook Logo">
+        </a>
+        <!-- Our navigation links to, about us, contact info, and main feed-->
+        <div class="footer-links">
+            <a href="aboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="feed.html">Home</a>
+        </div>
+
+        <!-- copyright notice -->
+        <p>&copy; 2026 BautroBook</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Feed | BautroBook</title>
+    <link rel="stylesheet" href="../src/css/universalStyles.css">
+    <link rel="stylesheet" href="../src/css/feed.css">
+</head>
+
+<body>
+    <!-- Default Header -->
+    <header class="header">
+    <div class="header-right">
+        <a href="../index.html">
+            <img src="../assets/logo.jpg" alt="BautroBook" class="header-logo">
+        </a>
+
+        <div class="profile-menu">
+            <a href="profile.html">
+                <img src="../assets/profile.jpg" alt="My Profile" class="header-pfp">
+            </a>
+
+            <button class="profile-button" onclick="toggleProfileMenu(event)">▼</button>
+
+            <div class="dropdown" id="profileDropdown">
+                <a href="profile.html">My Profile</a>
+                <a href="../index.html">Log Out</a>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- Each feed-post displays an album review and its interactions. -->
+    <div class="feed-post">
+        <img src="../assets/afycso.jpg" alt="A Fever You Can't Sweat Out" width="200">
+
+        <div>
+            <!-- Links to the profile of the user who published the review. -->
+            <h3><a href="otherProfile.html">@paolo.wav</a></h3>
+            <h2>A Fever You Can't Sweat Out</h2>
+            <p>Panic! at the Disco · 2005</p>
+            <h2>⭐ 9.5/10</h2>
+            <p>Dramatic, catchy, and iconic. An album that never gets old.</p>
+
+            <p>
+                <!-- Passes the clicked button to the function in likeComment.js. -->
+                <button onclick="likePost(this)">❤️ Like</button>
+                <span data-count="124">124 likes</span>
+                <button onclick="commentPost()">💬 Comment</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- Second album review. -->
+    <div class="feed-post">
+        <img src="../assets/heavy-metal.jpg" alt="Heavy Metal" width="200">
+
+        <div>
+            <h3><a href="otherProfile.html">@paolo.wav</a></h3>
+            <h2>Heavy Metal</h2>
+            <p>Cameron Winter · 2024</p>
+            <h2>⭐ 9/10</h2>
+            <p>Weird, emotional, and beautifully unpredictable.</p>
+            <p>
+                <button onclick="likePost(this)">❤️ Like</button>
+                <span data-count="104">104 likes</span>
+                <button onclick="commentPost()">💬 Comment</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- Third album review. -->
+    <div class="feed-post">
+        <img src="../assets/mobo.jpg" alt="You're Gonna Miss It All" width="200">
+
+        <div>
+            <h3><a href="otherProfile.html">@paolo.wav</a></h3>
+            <h2>You're Gonna Miss It All</h2>
+            <p>Modern Baseball · 2014</p>
+            <h2>⭐ 9.3/10</h2>
+            <p>This is f*cking amazing! The lyrics are too raw.</p>
+            <p>
+                <button onclick="likePost(this)">❤️ Like</button>
+                <span data-count="567">567 likes</span>
+                <button onclick="commentPost()">💬 Comment</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- Fourth album review. -->
+    <div class="feed-post">
+        <img src="../assets/floral-green.jpg" alt="Floral Green" width="200">
+
+        <div>
+            <h3><a href="otherProfile.html">@paolo.wav</a></h3>
+            <h2>Floral Green</h2>
+            <p>Title Fight · 2012</p>
+            <h2>⭐ 10/10</h2>
+            <p>Heavy guitars, dreamy sounds, and pure emotion. Absolute masterpiece.</p>
+            <p>
+                <button onclick="likePost(this)">❤️ Like</button>
+                <span data-count="1124">1124 likes</span>
+                <button onclick="commentPost()">💬 Comment</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- Handles Like and Comment button interactions. -->
+    <script src="../src/js/likeComment.js"></script>
+
+    <script src="../src/js/profileDropdown.js"></script>
+
+    <footer class="footer">
+        <a href="aboutUs.html" class="footer-logo">
+            <img src="../assets/logo.jpg" alt="BautroBook Logo">
+        </a>
+
+        <div class="footer-links">
+            <a href="aboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="feed.html">Home</a>
+        </div>
+
+        <p>&copy; 2026 BautroBook</p>
+    </footer>
+</body>
+</html>

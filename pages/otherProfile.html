@@ -1,0 +1,108 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BautroBook Profile</title>
+
+    <!-- Loads shared website styles and profile-specific styles -->
+    <link rel="stylesheet" href="../src/css/universalStyles.css">
+    <link rel="stylesheet" href="../src/css/profile.css">
+</head>
+<body>
+
+    <!-- Header provides homepage access and the profile dropdown menu -->
+    <header class="header">
+        <div class="header-right">
+
+            <!-- Clicking the logo returns to the homepage -->
+            <a href="../index.html">
+                <img src="../assets/logo.jpg" alt="BautroBook" class="header-logo">
+            </a>
+
+            <div class="profile-menu">
+
+                <!-- Clicking the profile picture opens the user's profile -->
+                <a href="profile.html">
+                    <img src="../assets/profile.jpg" alt="My Profile" class="header-pfp">
+                </a>
+
+                <!-- Toggles the visibility of the dropdown menu -->
+                <button class="profile-button" onclick="toggleProfileMenu(event)">▼</button>
+
+                <!-- Provides profile navigation and a link back to the homepage -->
+                <div class="dropdown" id="profileDropdown">
+                    <a href="profile.html">My Profile</a>
+                    <a href="../index.html">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Displays another user's profile and available friend actions -->
+    <div id="box2">
+
+        <!-- Displays the profile owner's main picture -->
+        <img src="../assets/luna.jpg"
+            alt="Profile Picture"
+            width="280"
+            height="320"
+            style="object-fit: cover;">
+
+        <div>
+
+            <!-- Displays the profile owner's name and username -->
+            <h1 id="name">Kyle Paolo Bautro</h1>
+            <p id="username">@paolo.wav</p>
+
+            <hr>
+
+            <!-- Shows the profile owner's short biography -->
+            <h2>Bio</h2>
+            <p id="bio">I want to play valorant</p>
+
+            <hr>
+
+            <!-- Provides additional information about the profile owner -->
+            <h2>About Me</h2>
+            <p id="about">My favorite hobby is going home</p>
+
+            <hr>
+
+            <!-- Lists the profile owner's interests -->
+            <h2>Interests</h2>
+            <p id="interests">Eating</p>
+
+            <!-- Contains the friend-request button and its status message -->
+            <div id="friendActions">
+                <button id="friendButton" onclick="addFriend()">Add Friend</button>
+                <span id="friendStatus"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loads the JavaScript for opening and closing the profile dropdown -->
+    <script src="../src/js/profileDropdown.js"></script>
+
+    <!-- Loads the JavaScript for sending or cancelling a friend request -->
+    <script src="../src/js/addFriend.js"></script>
+
+    <!-- Footer containing navigation links and copyright information -->
+    <footer class="footer">
+        <a href="aboutUs.html" class="footer-logo">
+            <img src="../assets/logo.jpg" alt="BautroBook Logo">
+        </a>
+
+        <div class="footer-links">
+            <a href="aboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="feed.html">Home</a>
+        </div>
+
+        <p>&copy; 2026 BautroBook</p>
+    </footer>
+
+</body>
+</html>
+```

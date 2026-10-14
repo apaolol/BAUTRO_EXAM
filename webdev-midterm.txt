@@ -1,0 +1,45 @@
+AI is taking over the world, and protecting our privacy has never been more important. We need a new social media platform where people can connect, share ideas, and express themselves freely without worrying about AI systems spying on them or collecting their personal data. The goal is to create a lightweight, privacy-focused social media prototype that prioritizes user security, data privacy, and freedom of expression, with a realistic app experience built entirely on the frontend. no backend, database, or API required.
+
+Your job is to build a multi-page static social media application using only HTML, CSS, and Vanilla JavaScript. 
+
+The app must include:
+
+Login page
+Signup page
+User profile page
+Main feed page
+about us page
+and other you can think of.
+
+addtnl: aboutus, contact, other profile
+
+
+document everything please.
+
+
+Your repository should be organized and easy to understand. Here's a sample structure:
+
+.
+├── index.html              
+├── pages/              
+│   ├── login.html
+│   ├── profile.html
+│   └── ... (any additional pages)
+├── src/                   
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+├── assets/                 
+│   └── img/
+
+
+
+As for now you can use ai to solve this or you can be honest. Mubanda raman gyapon balik sa inyo sa sunod nga mga lessons. 
+
+“I think, therefore I am.” — René Descartes, reflecting on the certainty of his own existence.
+
+But if we let AI do all the thinking for us, what becomes of our purpose? If thinking is what affirms our existence, then what is left of us when we surrender it to machines?
+
+for goodluck:
+https://youtu.be/dQw4w9WgXcQ?si=2tz7kvTO5_ub_IbX
